@@ -6,7 +6,7 @@ const HEADER = String.raw`<pre class="no-wrap">
  | |__| | | | (_| | | | | |_  | . \| | | (__| | | |
   \_____|_|  \__,_|_| |_|\__| |_|\_\_|_|\___|_| |_|
  --------------------------------------------------
-|     <a href="#" data-cmd="cat about">About</a>     |    <a href="#" data-cmd="cat projects">Projects</a>      |     <a href="#" data-cmd="cat resume">Resume</a>    |
+|     <a href="#about" data-cmd="cat about">About</a>     |    <a href="#projects" data-cmd="cat projects">Projects</a>      |     <a href="#resume" data-cmd="cat resume">Resume</a>    |
  --------------------------------------------------
 
 </pre>
@@ -97,8 +97,12 @@ $(function() {
           return "<pre>about    projects    resume</pre>";
         },
         cat: function(value) {
-          this.echo(pages[value], {raw: true, wrap: true});
-          //history.pushState({page: value}, value, value)
+          if (pages[value]) {
+            this.echo(pages[value], {raw: true, wrap: true});
+            window.location.hash = value;
+          } else {
+            this.echo(`cat: ${value}: No such file or directory`);
+          }
         },
         open: function(value) {
           var win = window.open(value, '_blank');
@@ -113,7 +117,12 @@ $(function() {
       
       onInit: function(terminal) {
         attachLinkHandler();
-        this.exec("cat about");
+        const page = window.location.hash.split('#')[1];
+        if (window.location.hash && pages[page]) {
+          this.exec(`cat ${page}`);
+        } else {
+          this.exec("cat about");
+        }
       },
       
       onAfterCommand: function(command) {
