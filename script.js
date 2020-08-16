@@ -23,8 +23,8 @@ Welcome to my website. I am Grant Klich. I'm currently a computer science underg
 Fun stuff I’ve made. I hope you may find them interesting or useful:
    - <a href="https://copyclip.io" data-cmd="open https://copyclip.io">copyclip.io</a>      Instant no-frills text/file sharing
    - <a href="https://numberstack.io"  data-cmd="open https://numberstack.io">numberstack.io</a>   A fun, reverse-polish math game    
-   - <a href="https://grant273.github.io/tripper/">Tripper</a>          A simple trip-oriented grocery shopping list 
-   - <a href="https://grant273.github.io/extended-monty-hall/">Monty Hall</a>       Interactive explanation of the famous Monty Hall Problem. Written in Vue.js
+   - <a href="https://grantklich.com/tripper/">Tripper</a>          A simple trip-oriented grocery shopping list 
+   - <a href="https://grantklich.com/extended-monty-hall/">Monty Hall</a>       Interactive explanation of the famous Monty Hall Problem. Written in Vue.js
    - <a href="https://github.com/grant273/phone-nab">Phone Nab</a>        A proof-of-concept ransomware program for public phone charging stations
     
 </pre>`, //TODO include https://grant273.github.io/namegame/ once namegame is fixed for desktop
