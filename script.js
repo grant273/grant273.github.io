@@ -106,7 +106,6 @@ $(function() {
         },
         open: function(value) {
           var win = window.open(value, '_blank');
-          win.focus();
         },
       },
     ],
