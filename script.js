@@ -14,7 +14,7 @@ const HEADER = String.raw`<pre class="no-wrap">
 
 var pages = {
   about: `<pre>
-Welcome to my website. I am Grant Klich. I'm currently a computer science undergrad at Virginia Tech, and I often make things for fun. Check out my projects above. You can get in touch at <a href="mailto:kgrant17@vt.edu">kgrant17@vt.edu</a>, or checkout my <a href="https://www.linkedin.com/in/grant-klich-24967b126/">LinkedIn</a> and <a href="https://github.com/grant273/">GitHub</a>.
+Welcome to my website. I am Grant Klich. I'm currently a software engineer at Hurdlr, and I often make things for fun. Check out my projects above. You can get in touch at <a href="mailto:kgrant17@vt.edu">kgrant17@vt.edu</a>, or checkout my <a href="https://www.linkedin.com/in/grant-klich-24967b126/">LinkedIn</a> and <a href="https://github.com/grant273/">GitHub</a>.
 
 <pre>`,
 
@@ -26,6 +26,7 @@ Fun stuff I’ve made. I hope you may find them interesting or useful:
    - <a href="https://grantklich.com/tripper/">Tripper</a>          A simple trip-oriented grocery shopping list 
    - <a href="https://grantklich.com/extended-monty-hall/">Monty Hall</a>       Interactive explanation of the famous Monty Hall Problem. Written in Vue.js
    - <a href="https://github.com/grant273/phone-nab">Phone Nab</a>        A proof-of-concept ransomware program for public phone charging stations
+   - <a href="https://tiniestviolin.com">Tiniest Violin</a>        The tiniest violin for the saddest problems
     
 </pre>`, //TODO include https://grant273.github.io/namegame/ once namegame is fixed for desktop
 
@@ -92,7 +93,7 @@ $(function() {
   term = $('#terminal').terminal(
     [
       {
-        // interpreters 
+        // interpreters
         ls: function(value) {
           return "<pre>about    projects    resume</pre>";
         },
@@ -113,7 +114,7 @@ $(function() {
       greetings: HEADER,
 
       raw: true, // need for anchor tags
-      
+
       onInit: function(terminal) {
         attachLinkHandler();
         const page = window.location.hash.split('#')[1];
@@ -123,7 +124,7 @@ $(function() {
           this.exec("cat about");
         }
       },
-      
+
       onAfterCommand: function(command) {
         if (clearIfFull(command)) {
           this.exec(command);
@@ -133,7 +134,7 @@ $(function() {
     },
 
   );
-  
+
   function attachLinkHandler() {
     $("a").off('click auxclick').on('click auxclick', function(e) {
       if (e.button === 2) {
@@ -147,7 +148,7 @@ $(function() {
       }
     });
   }
-  
+
   function clearIfFull(cmd) {
     if (cmd === "clear") {
       return false;
