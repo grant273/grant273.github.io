@@ -14,7 +14,7 @@ const HEADER = String.raw`<pre class="no-wrap">
 
 var pages = {
   about: `<pre>
-Welcome to my website. I am Grant Klich. I'm currently a software engineer at Hurdlr, and I often make things for fun. Check out my projects above. You can get in touch at <a href="mailto:kgrant17@vt.edu">kgrant17@vt.edu</a>, or checkout my <a href="https://www.linkedin.com/in/grant-klich-24967b126/">LinkedIn</a> and <a href="https://github.com/grant273/">GitHub</a>.
+Welcome to my website. I am Grant Klich. I'm currently a software engineer at <a href="https://atlassian.com">Atlassian</a>, and I often make things for fun. Check out my projects above. You can get in touch at <a href="mailto:kgrant17@vt.edu">kgrant17@vt.edu</a>, or checkout my <a href="https://www.linkedin.com/in/grant-klich-24967b126/">LinkedIn</a> and <a href="https://github.com/grant273/">GitHub</a>.
 
 <pre>`,
 
