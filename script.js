@@ -21,12 +21,13 @@ Welcome to my website. I am Grant Klich. I'm currently a software engineer at <a
   projects: String.raw`<pre>
 
 Fun stuff I’ve made. I hope you may find them interesting or useful:
-   - <a href="https://copyclip.io" data-cmd="open https://copyclip.io">copyclip.io</a>      Instant no-frills text/file sharing
-   - <a href="https://numberstack.io"  data-cmd="open https://numberstack.io">numberstack.io</a>   A fun, reverse-polish math game    
-   - <a href="https://grantklich.com/tripper/">Tripper</a>          A simple trip-oriented grocery shopping list 
-   - <a href="https://grantklich.com/extended-monty-hall/">Monty Hall</a>       Interactive explanation of the famous Monty Hall Problem. Written in Vue.js
-   - <a href="https://github.com/grant273/phone-nab">Phone Nab</a>        A proof-of-concept ransomware program for public phone charging stations
-   - <a href="https://tiniestviolin.com">Tiniest Violin</a>        The tiniest violin for the saddest problems
+   - <a href="https://copyclip.io" data-cmd="open https://copyclip.io">copyclip.io</a>       Instant no-frills text/file sharing
+   - <a href="https://numberstack.io"  data-cmd="open https://numberstack.io">numberstack.io</a>    A fun, reverse-polish math game    
+   - <a href="https://grantklich.com/tripper/">Tripper</a>           A simple trip-oriented grocery shopping list 
+   - <a href="https://grantklich.com/extended-monty-hall/">Monty Hall</a>        Interactive explanation of the famous Monty Hall Problem. Written in Vue.js
+   - <a href="https://github.com/grant273/phone-nab">Phone Nab</a>         A proof-of-concept ransomware program for public phone charging stations
+   - <a href="https://tiniestviolin.com">Tiniest Violin</a>    The tiniest violin for the saddest problems
+   - <a href="https://grantklich.com/Quinquagintiordle">Quinquagintiordle</a> Wordle - but 50 of them
     
 </pre>`, //TODO include https://grant273.github.io/namegame/ once namegame is fixed for desktop
 
